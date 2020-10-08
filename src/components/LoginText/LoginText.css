@@ -1,0 +1,14 @@
+#logintext{
+    text-align: center;
+    margin-top: 173px;
+    font-family: Arial,Helvetica;
+    color: #646464;
+}
+#loginword{
+    font-size: 23px;
+    font-weight: 600;
+}
+#loginsubtext{
+    font-size: 18px;
+    font-weight: 25;
+}
