@@ -1,13 +1,10 @@
 import React from 'react';
-import LoginText from './components/LoginText'
-import LoginFrame from './components/LoginFrame'
-import './App.css';
+import Login from './pages/Login'
 
 const App = ()=> {
   return (
     <div>
-      <LoginText />
-      <LoginFrame />
+      <Login/>
     </div>
   );
 }
