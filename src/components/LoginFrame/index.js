@@ -1,6 +1,6 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './LoginFrame.css'
-import RedirectHome from './Redirect'
 
 const LoginFrame = () => {
     return(
@@ -9,7 +9,7 @@ const LoginFrame = () => {
             <input type="text" className = "inputbox" id="username" placeholder="username..."/>
             <input type="password" className = "inputbox" id="password" placeholder="password..."/>
             </div>
-            <button className="submitcircle" onClick={RedirectHome()}>{/*<img src="./pics/SubmitArrow.png" alt="white arrow" width="29px" id="submitarrow"/>*/}Submit</button>
+            <button className="submitcircle" ><NavLink to="/profile" style={{textDecoration: "none"}}>Submit</NavLink></button>
         </div>
     );
 }
