@@ -31,6 +31,7 @@
 }
 
 .submitcircle{
+    padding: 10%;
     position: absolute; 
     top: 30%;
     left: 90%; 
@@ -44,6 +45,8 @@
     box-shadow: 2px 3px 2px #00000027;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
 }
 .submitcircle:active{
     background-color: #003346;

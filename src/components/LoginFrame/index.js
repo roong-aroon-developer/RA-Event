@@ -9,7 +9,7 @@ const LoginFrame = () => {
             <input type="text" className = "inputbox" id="username" placeholder="username..."/>
             <input type="password" className = "inputbox" id="password" placeholder="password..."/>
             </div>
-            <button className="submitcircle" ><NavLink to="/profile" style={{textDecoration: "none"}}>Submit</NavLink></button>
+            <NavLink to="/Home2" style={{textDecoration: "none", color: "white"}}><div className="submitcircle">Submit</div></NavLink>
         </div>
     );
 }
