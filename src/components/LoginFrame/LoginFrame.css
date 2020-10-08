@@ -3,32 +3,33 @@
     -webkit-box-sizing: border-box; 
      box-sizing: border-box; 
   }
+
+#field-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 #loginframe{
-    padding: 6%;
-    padding-left: 4%;
-    margin-left: 0px;
-    height:152px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 152px;
     width: 329px;
-    margin-top: 48px;
     background-color: #FFFFFF;
     border-radius: 0px 500px 500px 0px;
     box-shadow: 1px 2px 20px #00000014;
     position: relative;
+    display: flex;
+    flex-direction: row;
 }
 .inputbox{
-    padding: 5px;
+    margin: 10px;
     width:268px;
     height:40px;
     border-radius: 500px;
     border: 1px solid #707070;
     outline: none;
 }
-#username{
-    margin-top: 3px;
-}
-#password{
-    margin-top: 22px;
-}
+
 .submitcircle{
     position: absolute; 
     top: 30%;
