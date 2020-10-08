@@ -45,8 +45,8 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-.submitcircle:hover{
-    background-color: #1c3559;
+.submitcircle:active{
+    background-color: #003346;
 }
 #submitarrow{
     margin: auto;
