@@ -1,7 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
+import HomeBackground from "../components/HomeBackground";
 
 const Home = () => {
-  return <div>Hello Wolrd</div>;
-};
+  return (
+      <Fragment>
+          <HomeBackground />
+      </Fragment>
+  )
+}
 
 export default Home;
