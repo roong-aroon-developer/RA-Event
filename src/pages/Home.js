@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
-import HomeBackground from "../components/HomeBackground";
+import '../styles/Home.css';
 
 const Home = () => {
   return (
-      <Fragment>
-          <HomeBackground />
-      </Fragment>
+      <div id = "App">
+        Hello World
+      </div>
   )
 }
 
