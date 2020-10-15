@@ -1,0 +1,29 @@
+#GreetBox{
+    width:100%;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 33px;
+    overflow: hidden;
+}
+#Welcome{
+    color:white;
+    font-size: 23px;
+    font-weight: 500;
+}
+#subWelcome{
+    color:white;
+    font-size: 15px;
+    font-weight: 50;
+}
+#InfoCircle{
+    position: absolute;
+    right: -5.5%;
+    top:-5%;
+
+    width: 177px;
+    height: 177px;
+    border-radius: 500px;
+    background-color: #284572;
+    padding: 12%;
+    overflow: hidden;
+}
