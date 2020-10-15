@@ -10,6 +10,7 @@ const GreetUser = () => {
             <div id = "subWelcome">
                 Here's your event feed
             </div>
+            <div id="Line" />
             <div id = "InfoCircle">
                 [Placeholder]
             </div>
