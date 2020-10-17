@@ -3,9 +3,15 @@ import './EventFeed.css'
 
 const EventFeed = () => {
     return(
-        <div className='FeedText'>
+        <div>
+            <div className='FeedText'>
             Upcoming Event
+            </div>
+            <div className = 'FeedBubble'>
+                [PlaceHolder]
+            </div>
         </div>
+        
     );
 }
 
