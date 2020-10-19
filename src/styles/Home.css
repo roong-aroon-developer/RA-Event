@@ -5,4 +5,5 @@
     background-image: linear-gradient(to bottom, #61B5E8,#F6F6F6);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
