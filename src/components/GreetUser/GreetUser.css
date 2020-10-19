@@ -14,10 +14,18 @@
     font-size: 15px;
     font-weight: 20;
 }
+#CircleBox{
+    width: 177px;
+    height: 177px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    overflow: hidden;
+}
 #InfoCircle{
     position: absolute;
-    right: -5.5%;
-    top:-5%;
+    right: -20%;
+    top:-20%;
     overflow: hidden;
 
     width: 177px;

@@ -11,8 +11,9 @@ const GreetUser = () => {
                 Here's your event feed
             </div>
             <div id="Line" />
-            <div id = "InfoCircle">
-                [Placeholder]
+            <div id = "CircleBox">
+                <div id = "InfoCircle">
+                </div>
             </div>
         </div>
     );
