@@ -1,7 +1,7 @@
 import React from "react";
 import EventFeed from "../components/EventFeed";
 import GreetUser from "../components/GreetUser";
-import WeekFeed from "..//components/WeekFeed"
+import WeekFeed from "../components/WeekFeed"
 
 import '../styles/Home.css';
 
