@@ -7,11 +7,9 @@ html, body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
 }
 
 #root {
-  overflow: hidden;
   width: 100%;
   height: 100%;
 }
