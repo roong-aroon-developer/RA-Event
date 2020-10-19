@@ -1,0 +1,14 @@
+.WeekText{
+    margin-top: 29px;
+    color:#484848;
+    font-size: 15px;
+}
+.WeekBubble{
+    width: 338px;
+    height: 119px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: #00000029 1px 3px 5px;
+
+    margin-top: 16px;
+}
