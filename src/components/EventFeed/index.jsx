@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Carousel from 'react-multi-carousel'
 import "react-multi-carousel/lib/styles.css";
 import './EventFeed.css'
+import { EventData } from '../../store/EventFeedMock';
 
 const responsive = {
     largeDesktop: {
@@ -21,6 +22,10 @@ const responsive = {
     },
   }
 
+const HandleClick = () => {
+    
+}
+
 const EventFeed = () => {
     return(
         <div>
@@ -36,9 +41,11 @@ const EventFeed = () => {
                 focusOnSelect={true}
                 containerClass='pb-8' 
               >
-                <div className='FeedBubble'>test1</div>
-                <div className='FeedBubble'>test2</div>
-                <div className='FeedBubble'>test3</div>        
+                {
+                    EventData.map(data => (
+                        <div className="FeedBubble"/>
+                    ))
+                } 
             </Carousel>    
         </div>
         

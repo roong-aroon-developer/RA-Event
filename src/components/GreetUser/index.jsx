@@ -13,6 +13,7 @@ const GreetUser = () => {
             <div id="Line" />
             <div id = "CircleBox">
                 <div id = "InfoCircle">
+                
                 </div>
             </div>
         </div>
