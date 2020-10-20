@@ -8,7 +8,6 @@ const Login = () => {
             <LoginText />
             <LoginFrame />
         </Fragment>
-        
     )
 }
 
