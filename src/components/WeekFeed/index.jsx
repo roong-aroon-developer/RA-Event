@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { weekData } from '../../store/weekFeedMock'
+import { weekData } from '../../store/WeekFeedMock'
 import './WeekFeed.css'
     
 const WeekFeed = () => {
