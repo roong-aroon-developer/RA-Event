@@ -24,3 +24,4 @@ yarn-error.log*
 
 #custom
 debug.log
+yarn.lock
