@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Carousel from 'react-multi-carousel'
 import { Link, Route, BrowserRouter, Switch  } from 'react-router-dom'
 

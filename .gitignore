@@ -24,4 +24,4 @@ yarn-error.log*
 
 #custom
 debug.log
-yarn.lock
+package-lock.json
