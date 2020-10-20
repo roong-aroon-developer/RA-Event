@@ -34,8 +34,8 @@ const EventFeed = () => {
                 arrows={false}
                 responsive={responsive}
                 focusOnSelect={true}
-                  containerClass='pb-8'
-            >
+                containerClass='pb-8' 
+              >
                 <div className='FeedBubble'>test1</div>
                 <div className='FeedBubble'>test2</div>
                 <div className='FeedBubble'>test3</div>        

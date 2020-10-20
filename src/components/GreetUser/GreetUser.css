@@ -4,7 +4,6 @@
     overflow: hidden;
 }
 #Welcome{
-    margin-top: 8px;
     color:white;
     font-size: 23px;
     font-weight: 500;
@@ -15,8 +14,8 @@
     font-weight: 20;
 }
 #CircleBox{
-    width: 177px;
-    height: 177px;
+    width: 158px;
+    height: 141px;
     position: absolute;
     right: 0%;
     top: 0%;
@@ -24,18 +23,18 @@
 }
 #InfoCircle{
     position: absolute;
-    right: -20%;
-    top:-20%;
+    right: -12%;
+    top:-26.5%;
     overflow: hidden;
 
     width: 177px;
     height: 177px;
     border-radius: 500px;
     background-color: #284572;
-    padding: 12%;
 }
 #Line{
     margin-top: 16px;
+    margin-left: 1.5px;
     background-color: #D9D9D9;
     width: 204px;
     height: 1.5px;
