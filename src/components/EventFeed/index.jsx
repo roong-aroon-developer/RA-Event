@@ -1,8 +1,12 @@
 import React, { Fragment } from 'react'
 import Carousel from 'react-multi-carousel'
-import "react-multi-carousel/lib/styles.css";
+import { Link, Route, BrowserRouter, Switch  } from 'react-router-dom'
+
+import "react-multi-carousel/lib/styles.css"
 import './EventFeed.css'
-import { EventData } from '../../store/EventFeedMock';
+
+import { EventData } from '../../store/EventFeedMock'
+import EventInfo from './EventInfo'
 
 const responsive = {
     largeDesktop: {
@@ -22,10 +26,6 @@ const responsive = {
     },
   }
 
-const HandleClick = () => {
-    
-}
-
 const EventFeed = () => {
     return(
         <div>
@@ -43,10 +43,14 @@ const EventFeed = () => {
               >
                 {
                     EventData.map(data => (
-                        <div className="FeedBubble"/>
+                        <Link to={{
+                          pathname: data.path,}}>
+                            <EventInfo />
+                        </Link>
                     ))
                 } 
             </Carousel>    
+            
         </div>
         
     );

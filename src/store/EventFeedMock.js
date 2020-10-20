@@ -1,18 +1,20 @@
 export const EventData = [
     {
         name: "Hello World",
-        desc: "It's the most famous program. ... As a function, the computer program simply tells the computer to display the words “Hello, World!” Traditionally, it's the first program developers use to test systems."
+        desc: "It's the most famous program.",
+        path: "/test"
     },
     {
         name: "Hello World",
-        desc: "It's the most famous program. ... As a function, the computer program simply tells the computer to display the words “Hello, World!” Traditionally, it's the first program developers use to test systems."
+        desc: "It's the most famous program.",
+        path: "/test2"
     },
     {
         name: "Hello World",
-        desc: "It's the most famous program. ... As a function, the computer program simply tells the computer to display the words “Hello, World!” Traditionally, it's the first program developers use to test systems."
-    },
+        desc: "It's the most famous program.",
+        path: "/test3"},
     {
         name: "Hello World",
-        desc: "It's the most famous program. ... As a function, the computer program simply tells the computer to display the words “Hello, World!” Traditionally, it's the first program developers use to test systems."
-    },
+        desc: "It's the most famous program.",
+        path: "/test4"},
 ]
