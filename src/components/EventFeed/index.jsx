@@ -44,8 +44,9 @@ const EventFeed = () => {
                 {
                     EventData.map(data => (
                         <Link to={{
-                          pathname: data.path,}}>
-                            <EventInfo />
+                          pathname: data.path,}}
+                          key={data.name}>
+                            <EventInfo  />
                         </Link>
                     ))
                 } 

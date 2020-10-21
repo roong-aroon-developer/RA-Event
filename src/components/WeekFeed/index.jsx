@@ -1,15 +1,18 @@
 import React, { Fragment } from 'react'
-import { weekData } from '../../store/WeekFeedMock'
+import { weekData } from '../../store/weekFeedMock.js'
 import './WeekFeed.css'
     
 const WeekFeed = () => {
     return(
       <Fragment>  
-      {
-          weekData.map(data => (
-              <div className="WeekBubble"/>
-          ))
-      }
+        <div className="WeekText">
+            This Week
+        </div>  
+        {
+            weekData.map(data => (
+                <div key={data.name} className="WeekBubble"/>
+            ))
+        }
       </Fragment>  
     );
         
