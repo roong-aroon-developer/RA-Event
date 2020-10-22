@@ -4,12 +4,14 @@ import './EventTemplate.css'
 
 const EventTemplate = () => {
     return(
-        <div >
-            <Link to='/'>
-                <div className="Back">
-                    Back
-                </div>
-            </Link>
+        <div className="TemplatePage" >
+            <div className = 'placeholder' >
+                <Link to='/'>
+                    <div className="Back">
+                        b
+                    </div>
+                </Link>
+            </div>
         </div>
     )
 }

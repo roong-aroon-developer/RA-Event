@@ -13,9 +13,8 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/login" component={Login} />
-        <Route path="/test" component={Info} />
         {EventData.map((data) => (
-          <Route path={data.path} component={Info} />
+          <Route key={data.name} path={data.path} component={Info} />
         ))}
       </Switch>
     </BrowserRouter>
