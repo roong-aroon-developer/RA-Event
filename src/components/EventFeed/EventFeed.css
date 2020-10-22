@@ -4,13 +4,3 @@
     color:#484848;
     font-weight: 500;
 }
-.FeedBubble{
-    width: 330px;
-    height: 179px;
-    border-radius: 10px;
-    background-color: grey;
-    box-shadow: #00000029 1px 3px 5px;
-
-    margin-top: 16px;
-    float:left;
-}
