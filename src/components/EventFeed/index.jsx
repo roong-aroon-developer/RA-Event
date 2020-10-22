@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel'
-import { Link, Route, BrowserRouter, Switch  } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import "react-multi-carousel/lib/styles.css"
 import './EventFeed.css'
