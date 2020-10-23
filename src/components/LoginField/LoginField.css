@@ -30,28 +30,17 @@
     outline: none;
 }
 
-.submitcircle{
-    padding: 10%;
-    position: absolute; 
-    top: 30%;
-    left: 90%; 
-    float:right;
-    width: 66px;
-    height: 66px;
-    border-radius: 500px;
-    outline: none;
-    border: none;
-    background-color: #1C355B;
-    box-shadow: 2px 3px 2px #00000027;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+#logintext{
     text-align: center;
+    margin-top: 173px;
+    font-family: Arial,Helvetica;
+    color: #646464;
 }
-.submitcircle:active{
-    background-color: #003346;
+#loginword{
+    font-size: 23px;
+    font-weight: 600;
 }
-#submitarrow{
-    margin: auto;
-    margin-top: 5px;
+#loginsubtext{
+    font-size: 18px;
+    font-weight: 25;
 }

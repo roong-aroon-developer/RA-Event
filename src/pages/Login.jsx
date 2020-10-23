@@ -1,13 +1,9 @@
 import React, { Fragment } from 'react'
-import LoginText from '../components/LoginText'
-import LoginFrame from '../components/LoginFrame'
+import LoginField from "../components/LoginField"
 
 const Login = () => {
     return(
-        <Fragment>
-            <LoginText />
-            <LoginFrame />
-        </Fragment>
+        <LoginField/>
     )
 }
 

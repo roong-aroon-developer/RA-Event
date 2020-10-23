@@ -1,7 +1,7 @@
 import React from 'react'
-import './GreetUser.css'
+import './Header.css'
 
-const GreetUser = () => {
+const Header = () => {
     return(
         <div id = "GreetBox">
             <div id ="Welcome"> 
@@ -20,4 +20,4 @@ const GreetUser = () => {
     );
 }
 
-export default GreetUser;
+export default Header;

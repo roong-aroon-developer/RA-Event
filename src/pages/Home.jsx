@@ -1,6 +1,6 @@
 import React from "react";
 import EventFeed from "../components/EventFeed";
-import GreetUser from "../components/GreetUser";
+import Header from "../components/Header";
 import WeekFeed from "../components/WeekFeed"
 
 import '../styles/Home.css';
@@ -8,7 +8,7 @@ import '../styles/Home.css';
 const Home = () => {
   return (
       <div id = "App">
-        <GreetUser />
+        <Header />
         <EventFeed />
         <WeekFeed />
       </div>
