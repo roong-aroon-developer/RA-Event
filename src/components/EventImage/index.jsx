@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './EventTemplate.css'
+import './EventImage.css'
 
-const EventTemplate = () => {
+const EventImage = () => {
     return(
         <div className="TemplatePage" >
             <div className = 'placeholder' >
@@ -16,4 +16,4 @@ const EventTemplate = () => {
     )
 }
 
-export default EventTemplate;
+export default EventImage;

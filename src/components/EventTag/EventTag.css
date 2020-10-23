@@ -1,0 +1,16 @@
+.TagBubble{
+    margin-top: 20.5px;
+    margin-left: 3.5%;
+
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+    padding-right: 6px;
+    padding-left: 6px;
+
+    border-radius: 500px;
+    background-color:#EBEBEB;
+    font-size: 14px;
+    color:#667EEA;
+
+    display: inline-block;
+}
