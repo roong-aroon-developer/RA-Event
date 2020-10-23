@@ -9,7 +9,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     marginTop: 20,
-    height: 130
+    height: 130,
+    borderRadius: 10
   },
   details: {
     display: 'flex',
@@ -40,7 +41,7 @@ export default function MediaControlCard() {
     <Card className={classes.root}>
         <CardMedia
         className={classes.cover}
-        image="https://dummyimage.com/400x300"
+        image="https://dummyimage.com/120x130"
         title="Live from space album cover"
       />
       <div className={classes.details}>
