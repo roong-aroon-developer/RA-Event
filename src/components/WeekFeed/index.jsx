@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react'
 import { weekData } from '../../store/weekFeedMock.js'
+import MediaControlCard  from './WeekCard/index'
+
 import './WeekFeed.css'
     
 const WeekFeed = () => {
@@ -10,7 +12,7 @@ const WeekFeed = () => {
         </div>  
         {
             weekData.map(data => (
-                <div key={data.name} className="WeekBubble"/>
+                <MediaControlCard key={data.name}/>
             ))
         }
       </Fragment>  
