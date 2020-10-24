@@ -2,7 +2,7 @@ import React from "react";
 import { Fragment } from "react"
 import "./LoginField.css";
 
-const LoginField = () => {
+const LoginField = (props) => {
   return (
     <Fragment>
       <div id="logintext">
@@ -10,20 +10,7 @@ const LoginField = () => {
         <div id="loginsubtext">with student ID</div>
       </div>
       <div id="loginframe">
-        <div id="field-wrapper">
-          <input
-            type="text"
-            className="inputbox"
-            id="username"
-            placeholder="username..."
-          />
-          <input
-            type="password"
-            className="inputbox"
-            id="password"
-            placeholder="password..."
-          />
-        </div>
+        {props.children}
       </div>
     </Fragment>
   );
