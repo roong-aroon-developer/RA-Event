@@ -7,7 +7,7 @@ import '../styles/Home.css';
 
 const Home = () => {
   return (
-      <div id = "App">
+    <div id = "App">
         <Header />
         <EventFeed />
         <WeekFeed />

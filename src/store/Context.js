@@ -1,15 +1,7 @@
 import React, { useState } from "react";
+import firebase from '../store/Firebase'
 
-export const AuthContext = React.createContext({
-  loggedIn: false,
-  userInfo: {
-    name: "",
-    uid: "",
-    email: "",
-    phone: "",
-    img: "",
-  },
-});
+export const AuthContext = React.createContext();
 
 export const Store = (props) => {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -20,27 +12,26 @@ export const Store = (props) => {
     phone: "",
     img: "",
   });
-  const checkAuth = (e) => {
-      setLoggedIn(e)
-  }
-
-  const checkUserInfo = (e) => {
-    setUserInfo({
-        name: e.name,
-        uid: e.uid,
-        email: e.email,
-        phone: e.phone,
-        img: e.img
+  React.useEffect(()=> {
+    const unregisterAuthObserver = firebase.auth().onAuthStateChanged(user => {
+        setLoggedIn(!!user)
     })
-  }
-
+    return () => {
+      unregisterAuthObserver();
+      setUserInfo({
+        name: firebase.auth().currentUser?.displayName,
+        uid: firebase.auth().currentUser?.uid,
+        email: firebase.auth().currentUser?.email,
+        phone: firebase.auth().currentUser?.phoneNumber,
+        img: firebase.auth().currentUser?.photoURL,
+      });
+    }
+  }, [])
   return (
       <AuthContext.Provider
         value={{
             loggedIn,
             userInfo,
-            checkAuth,
-            checkUserInfo
         }}>
           {props.children}
       </AuthContext.Provider>

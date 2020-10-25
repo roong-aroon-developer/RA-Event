@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
-
 import { EventData } from "./store/EventFeedMock";
 
 import Login from "./pages/Login";
@@ -11,8 +10,8 @@ const App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={Home} />
         <Route path="/login" component={Login} />
+        <Route exact path="/" component={Home} />
         {EventData.map((data) => (
           <Route key={data.name} path={data.path} component={Info} />
         ))}
