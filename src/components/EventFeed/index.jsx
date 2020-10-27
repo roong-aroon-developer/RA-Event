@@ -44,8 +44,9 @@ const EventFeed = () => {
                 {
                     EventData.map(data => (
                         <Link to={{
-                          pathname: data.path,}}>
-                            <MediaControlCard key={data.name}/>
+                          pathname: data.path,}}
+                          key={data.name}>
+                            <MediaControlCard/>
                         </Link>
                     ))
                 } 
