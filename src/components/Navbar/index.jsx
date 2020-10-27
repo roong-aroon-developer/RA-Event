@@ -2,19 +2,32 @@ import React from 'react'
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
 import MailOutlineRoundedIcon from '@material-ui/icons/MailOutlineRounded';
+import { makeStyles } from '@material-ui/core/styles';
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 
-import './Navbar.css'
+const useStyles = makeStyles({
+  root: {
+    width: "100%",
+    height: 60,
+    position: "fixed",
+    backgroundColor: "#ffffff",
+    borderRadius: 30,
+    zIndex: 1
+  },
+});
 
 const Navbar = () => {
+    const classes = useStyles();
     return(
-        <div id="nav-wrapper">
-            <div id="icons-wrapper">
-                <HomeRoundedIcon/>
-                <MailOutlineRoundedIcon/>
-                <AccountCircleRoundedIcon/>
-            </div>
-
-        </div>
+        <BottomNavigation
+        showLabels
+        className={classes.root}
+      >
+        <BottomNavigationAction label="Home" icon={<HomeRoundedIcon/>} />
+        <BottomNavigationAction label="Mail" icon={<MailOutlineRoundedIcon/>} />
+        <BottomNavigationAction label="Profile" icon={<AccountCircleRoundedIcon/>} />
+      </BottomNavigation>
     )
 }
 
