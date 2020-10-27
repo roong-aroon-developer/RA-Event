@@ -13,7 +13,7 @@ const WeekFeed = () => {
         </div>  
         {
             weekData.map(data => (
-            <Link to={{
+            <Link style={{textDecoration: "none"}} to={{
               pathname: data.path,}}
               key={data.name}>
                 <MediaControlCard />
