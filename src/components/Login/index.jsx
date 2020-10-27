@@ -1,5 +1,5 @@
 import React from "react";
-import LoginField from "../LoginField";
+import LoginField from "./LoginField";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import "firebase/auth";
 import firebase from "../../store/Firebase";
