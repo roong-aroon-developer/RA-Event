@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom'
 import { weekData } from '../../store/weekFeedMock.js'
 import MediaControlCard  from './WeekCard/index'
 
@@ -12,7 +13,11 @@ const WeekFeed = () => {
         </div>  
         {
             weekData.map(data => (
-                <MediaControlCard key={data.name}/>
+            <Link to={{
+              pathname: data.path,}}
+              key={data.name}>
+                <MediaControlCard />
+            </Link>
             ))
         }
       </Fragment>  
