@@ -12,7 +12,7 @@ const Home = () => {
         <Header />
         <EventFeed />
         <WeekFeed />
-        <Navbar/>
+        <Navbar />
       </div>
   )
 }
