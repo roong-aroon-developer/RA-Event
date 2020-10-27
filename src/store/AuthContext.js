@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import firebase from '../store/Firebase'
+import firebase from './Firebase'
 
 export const AuthContext = React.createContext();
 
-export const Store = (props) => {
+export const AuthStore = (props) => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [userInfo, setUserInfo] = useState({
     name: "",
