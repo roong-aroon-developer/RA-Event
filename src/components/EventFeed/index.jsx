@@ -6,7 +6,7 @@ import "react-multi-carousel/lib/styles.css"
 import './EventFeed.css'
 
 import { EventData } from '../../store/EventFeedMock'
-import EventInfo from './EventInfo'
+import MediaControlCard from './EventInfo'
 
 const responsive = {
     largeDesktop: {
@@ -44,9 +44,8 @@ const EventFeed = () => {
                 {
                     EventData.map(data => (
                         <Link to={{
-                          pathname: data.path,}}
-                          key={data.name}>
-                            <EventInfo  />
+                          pathname: data.path,}}>
+                            <MediaControlCard key={data.name}/>
                         </Link>
                     ))
                 } 
