@@ -1,12 +1,14 @@
 import React from "react";
-import EventImage from '../components/EventImage';
-import EventTag from "../components/EventTag";
+import EventImage from '../components/Info/EventImage';
+import EventTag from "../components/Info/EventTag";
+import EventContent from "../components/Info/EventContent";
 
 const Info = () => {
     return(
         <div>
             <EventImage />
             <EventTag />
+            <EventContent />
         </div>
     );
 }

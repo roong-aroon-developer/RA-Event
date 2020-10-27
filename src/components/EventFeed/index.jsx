@@ -39,7 +39,7 @@ const EventFeed = () => {
                 arrows={false}
                 responsive={responsive}
                 focusOnSelect={true}
-                containerClass='pb-8' 
+                itemClass="Item"
               >
                 {
                     EventData.map(data => (

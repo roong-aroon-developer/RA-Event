@@ -1,0 +1,16 @@
+#PostContainer{
+    padding: 18px;
+}
+#Title{
+    margin-top: 6px;
+
+    font-size: 25px;
+    font-weight: 500;
+    color:#646464;
+}
+#PostContent{
+    margin-top: 22px;
+
+    font-size: 15px;
+    color: #646464;
+}
