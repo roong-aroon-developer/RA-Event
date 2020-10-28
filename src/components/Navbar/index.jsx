@@ -1,11 +1,11 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
-import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
-import MailOutlineRoundedIcon from '@material-ui/icons/MailOutlineRounded';
-import { makeStyles } from '@material-ui/core/styles';
-import BottomNavigation from '@material-ui/core/BottomNavigation';
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import React from "react";
+import { Link } from "react-router-dom";
+import HomeRoundedIcon from "@material-ui/icons/HomeRounded";
+import AccountCircleRoundedIcon from "@material-ui/icons/AccountCircleRounded";
+import MailOutlineRoundedIcon from "@material-ui/icons/MailOutlineRounded";
+import { makeStyles } from "@material-ui/core/styles";
+import BottomNavigation from "@material-ui/core/BottomNavigation";
+import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 
 const useStyles = makeStyles({
   root: {
@@ -19,27 +19,39 @@ const useStyles = makeStyles({
     boxShadow: "1px 3px 7px #00000024",
     margin: "auto",
     left: "50%",
-    transform: "translate(-50%, 0)"
+    transform: "translate(-50%, 0)",
   },
 });
 
 const Navbar = () => {
-    const classes = useStyles();
-    return(
-        <BottomNavigation
-        className={classes.root}
-      >
-        <Link to='/'>
-          <BottomNavigationAction showLabel={ true } label="Home" icon={<HomeRoundedIcon/>} />
-        </Link>
-        <Link to='/mail'>
-          <BottomNavigationAction showLabel={ true } label="Mail" icon={<MailOutlineRoundedIcon/>} />
-        </Link>
-        <Link to='/profile'>
-          <BottomNavigationAction showLabel={ true } label="Profile" icon={<AccountCircleRoundedIcon/>} />
-          </Link>
-      </BottomNavigation>
-    )
-}
+  const classes = useStyles();
+  return (
+    <BottomNavigation className={classes.root}>
+      <BottomNavigationAction
+        showLabel={true}
+        label="Home"
+        icon={<HomeRoundedIcon />}
+        component={Link}
+        to="/"
+      />
 
-export default Navbar
+      <BottomNavigationAction
+        showLabel={true}
+        label="Mail"
+        icon={<MailOutlineRoundedIcon />}
+        component={Link}
+        to="/mail"
+      />
+
+      <BottomNavigationAction
+        showLabel={true}
+        label="Profile"
+        icon={<AccountCircleRoundedIcon />}
+        component={Link}
+        to="/profile"
+      />
+    </BottomNavigation>
+  );
+};
+
+export default Navbar;
