@@ -9,7 +9,6 @@ import "../styles/Home.css";
 const Home = () => {
   return (
     <Fragment>
-      <Navbar id="navbar"/>
       <div id="App">
         <Header />
         <EventFeed />
