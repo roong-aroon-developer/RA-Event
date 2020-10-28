@@ -11,6 +11,7 @@ const useStyles = makeStyles({
     width: "100%",
     height: 60,
     position: "fixed",
+    bottom: 10,
     backgroundColor: "#ffffff",
     borderRadius: 30,
     zIndex: 1
