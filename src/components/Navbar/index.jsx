@@ -33,8 +33,12 @@ const Navbar = () => {
         <Link to='/'>
           <BottomNavigationAction label="Home" icon={<HomeRoundedIcon/>} />
         </Link>
-        <BottomNavigationAction label="Mail" icon={<MailOutlineRoundedIcon/>} />
-        <BottomNavigationAction label="Profile" icon={<AccountCircleRoundedIcon/>} />
+        <Link to='/mail'>
+          <BottomNavigationAction label="Mail" icon={<MailOutlineRoundedIcon/>} />
+        </Link>
+        <Link to='/profile'>
+          <BottomNavigationAction label="Profile" icon={<AccountCircleRoundedIcon/>} />
+          </Link>
       </BottomNavigation>
     )
 }
