@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
 import MailOutlineRoundedIcon from '@material-ui/icons/MailOutlineRounded';
@@ -29,7 +30,9 @@ const Navbar = () => {
         showLabels
         className={classes.root}
       >
-        <BottomNavigationAction label="Home" icon={<HomeRoundedIcon/>} />
+        <Link to='/'>
+          <BottomNavigationAction label="Home" icon={<HomeRoundedIcon/>} />
+        </Link>
         <BottomNavigationAction label="Mail" icon={<MailOutlineRoundedIcon/>} />
         <BottomNavigationAction label="Profile" icon={<AccountCircleRoundedIcon/>} />
       </BottomNavigation>
