@@ -27,17 +27,16 @@ const Navbar = () => {
     const classes = useStyles();
     return(
         <BottomNavigation
-        showLabels
         className={classes.root}
       >
         <Link to='/'>
-          <BottomNavigationAction label="Home" icon={<HomeRoundedIcon/>} />
+          <BottomNavigationAction showLabel={ true } label="Home" icon={<HomeRoundedIcon/>} />
         </Link>
         <Link to='/mail'>
-          <BottomNavigationAction label="Mail" icon={<MailOutlineRoundedIcon/>} />
+          <BottomNavigationAction showLabel={ true } label="Mail" icon={<MailOutlineRoundedIcon/>} />
         </Link>
         <Link to='/profile'>
-          <BottomNavigationAction label="Profile" icon={<AccountCircleRoundedIcon/>} />
+          <BottomNavigationAction showLabel={ true } label="Profile" icon={<AccountCircleRoundedIcon/>} />
           </Link>
       </BottomNavigation>
     )
