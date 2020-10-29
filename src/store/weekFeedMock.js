@@ -1,36 +1,36 @@
 export const weekData = [
     {
         name: "Hello World1",
-        desc: "It's the most famous program.",
+        date: "dd/mm/yy",
         path: "/week",
         component: "Info",
     },
     {
         name: "Hello World2",
-        desc: "It's the most famous program.",
+        date: "dd/mm/yy",
         path: "/week2",
         component: "Info",
     },
     {
         name: "Hello World3",
-        desc: "It's the most famous program.",
+        date: "dd/mm/yy",
         path: "/week3",
         component: "Info",
     },
     {
         name: "Hello World4",
-        desc: "It's the most famous program.",
+        date: "dd/mm/yy",
         path: "/week4",
         component: "Info",
     },{
         name: "Hello World1",
-        desc: "It's the most famous program.",
+        date: "dd/mm/yy",
         path: "/week",
         component: "Info",
     },
     {
         name: "Hello World2",
-        desc: "It's the most famous program. ... As a function,",
+        date: "dd/mm/yy",
         path: "/week2",
         component: "Info",
     }

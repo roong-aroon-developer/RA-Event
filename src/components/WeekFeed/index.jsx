@@ -16,7 +16,7 @@ const WeekFeed = () => {
             <Link style={{textDecoration: "none"}} to={{
               pathname: data.path,}}
               key={data.name}>
-                <WeekCard title={data.name} description={data.desc}/>
+                <WeekCard title={data.name} date={data.date}/>
             </Link>
             ))
         }
