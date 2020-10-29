@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     right: '7%',
     color: 'white',
     textAlign: 'right',
-    maxWidth: "80%",
+    maxWidth: "85%",
     fontSize: "18pt",
     fontFamily: 'IBM Plex Sans Thai',  
   }
