@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     flex: '1 0 auto',
   },
   cover: {
-    width: 120,
+    minWidth: 120,
   },
   controls: {
     display: 'flex',
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function MediaControlCard() {
+export default function WeekCard(props) {
   const classes = useStyles();
   
   return (
@@ -47,10 +47,10 @@ export default function MediaControlCard() {
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
-            Live From Space
+            {props.title}
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
-            Mac Miller
+            {props.description}
           </Typography>
         </CardContent>
       </div>
