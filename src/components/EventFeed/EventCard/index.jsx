@@ -11,26 +11,18 @@ const useStyles = makeStyles((theme) => ({
     height: 180,
     borderRadius: 10
   },
-  details: {
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  content: {
-    flex: '1 0 auto',
-  },
   cover: {
     width: "100%",
   },
-  controls: {
-    display: 'flex',
-    alignItems: 'center',
-    paddingLeft: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
-  },
-  playIcon: {
-    height: 38,
-    width: 38,
-  },
+  overlay: {
+    position: 'absolute',
+    top: '15%',
+    right: '7%',
+    color: 'while',
+    textAlign: 'right',
+    maxWidth: "80%",
+    fontSize: "18pt"
+  }
 }));
 
 export default function EventCard() {
@@ -43,6 +35,7 @@ export default function EventCard() {
         image="https://dummyimage.com/340x180"
         title="Live from space album cover"
       />
+      <div className={classes.overlay} >วันเฉลิมพระชนมพรรษา พระบาทสมเด็จพระวชิรเกล้า เจ้าอยู่หัว</div>
     </Card>
   );
 }
