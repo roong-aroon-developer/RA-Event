@@ -12,6 +12,18 @@ const useStyles = makeStyles((theme) => ({
     height: 130,
     borderRadius: 10
   },
+  tag: {
+    display:'inline-block',
+    borderRadius: 100,
+    backgroundColor: '#EBEBEB',
+
+    color:'#667EEA',
+    fontSize:12,
+    paddingLeft:4,
+    paddingRight:4,
+    paddingTop:0.5,
+    paddingBottom:0.5,
+  },
   details: {
     display: 'flex',
     flexDirection: 'column',
@@ -46,6 +58,9 @@ export default function WeekCard(props) {
       />
       <div className={classes.details}>
         <CardContent className={classes.content}>
+          <Typography className={classes.tag}>
+            #News
+          </Typography>
           <Typography component="h5" variant="h5">
             {props.title}
           </Typography>
