@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 
+import '@ibm/plex';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -18,10 +20,11 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     top: '15%',
     right: '7%',
-    color: 'while',
+    color: 'white',
     textAlign: 'right',
     maxWidth: "80%",
-    fontSize: "18pt"
+    fontSize: "18pt",
+    fontFamily: 'IBM Plex Sans Thai',  
   }
 }));
 
