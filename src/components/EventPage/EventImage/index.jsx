@@ -17,11 +17,13 @@ const useStyles = makeStyles({
         backgroundColor: '#C9C9C9BE',
         opacity: 80,
         borderRadius: 500,
-    },
-    backArrow: {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+    },
+    backArrow: {
+        width: 18,
+        height: 20,
         color: 'white',
     }
 });
