@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cover: {
     width: "100%",
+    filter: "brightness(55%)"
   },
   overlay: {
     position: 'absolute',
