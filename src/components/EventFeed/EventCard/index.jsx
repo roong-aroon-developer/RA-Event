@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function EventCard() {
+export default function EventCard(props) {
   const classes = useStyles();
   
   return (
@@ -38,7 +38,7 @@ export default function EventCard() {
         image="https://dummyimage.com/340x180"
         title="Live from space album cover"
       />
-      <div className={classes.overlay} >วันเฉลิมพระชนมพรรษาพระบาทสมเด็จพระวชิรเกล้าเจ้าอยู่หัว</div>
+      <div className={classes.overlay} >{props.title}</div>
     </Card>
   );
 }
