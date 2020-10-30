@@ -22,8 +22,8 @@ const useStyles = makeStyles((theme) => ({
     right: '7%',
     color: 'white',
     textAlign: 'right',
-    maxWidth: "85%",
-    fontSize: "18pt",
+    maxWidth: "75%",
+    fontSize: "16pt",
     fontFamily: 'IBM Plex Sans Thai',  
   }
 }));
@@ -38,7 +38,7 @@ export default function EventCard() {
         image="https://dummyimage.com/340x180"
         title="Live from space album cover"
       />
-      <div className={classes.overlay} >วันเฉลิมพระชนมพรรษา พระบาทสมเด็จพระวชิรเกล้า เจ้าอยู่หัว</div>
+      <div className={classes.overlay} >วันเฉลิมพระชนมพรรษาพระบาทสมเด็จพระวชิรเกล้าเจ้าอยู่หัว</div>
     </Card>
   );
 }
