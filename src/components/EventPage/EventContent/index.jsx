@@ -1,15 +1,15 @@
 import React, { Fragment } from 'react'
 import './EventContent.css'
 
-const EventContent = () =>{
+const EventContent = (props) =>{
     return(
         <Fragment>
             <div id ="PostContainer">
                 <div id="Title">
-                    TITLE
+                    {props.title}
                 </div>
                 <div id="PostContent">
-                    CONTENT INFORMATION
+                    {props.body}
                 </div>
             </div>
         </Fragment>

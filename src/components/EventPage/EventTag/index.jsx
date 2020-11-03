@@ -1,10 +1,10 @@
 import React from 'react'
 import './EventTag.css'
 
-const EventTag = () => {
+const EventTag = (props) => {
     return(
         <div className='TagBubble'>
-            Placeholder
+            {"#".concat(props.tags)}
         </div>
     );
 }

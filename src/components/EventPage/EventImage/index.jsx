@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     }
 });
 
-const EventImage = () => {
+const EventImage = (props) => {
     const classes = useStyles();
     return(
         <div className="TemplatePage" >
