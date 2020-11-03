@@ -1,37 +1,23 @@
 export const weekData = [
     {
-        name: "Hello World1",
-        date: "dd/mm/yy",
+        name: "10 ข้อปฏิบัติควรรู้ก่อนเปิดภาคเรียนแรกในปี 2020",
+        date: "21 Sept 2020",
+        tag: "news",
         path: "/week",
-        component: "Info",
+        component: "Info"
     },
     {
-        name: "Hello World2",
-        date: "dd/mm/yy",
+        name: "หน่วยบริการปีการศึกษา ๑/๒๕๖๓ เปิดให้ลงทะเบียนแล้ว",
+        date: "21 Sept 2020",
+        tag: "registration",
         path: "/week2",
-        component: "Info",
+        component: "Info"
     },
     {
-        name: "Hello World3",
-        date: "dd/mm/yy",
+        name: "เปิดรับแล้ว! ศึกษาดูงานกับ KMUTT Formula Student",
+        date: "21 Sept 2020",
+        tag: "news",
         path: "/week3",
-        component: "Info",
-    },
-    {
-        name: "Hello World4",
-        date: "dd/mm/yy",
-        path: "/week4",
-        component: "Info",
-    },{
-        name: "Hello World1",
-        date: "dd/mm/yy",
-        path: "/week",
-        component: "Info",
-    },
-    {
-        name: "Hello World2",
-        date: "dd/mm/yy",
-        path: "/week2",
-        component: "Info",
+        component: "Info"
     }
 ]

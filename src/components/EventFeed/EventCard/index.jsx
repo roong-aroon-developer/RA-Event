@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cover: {
     width: "100%",
+    filter: "brightness(55%)"
   },
   overlay: {
     position: 'absolute',
@@ -22,13 +23,13 @@ const useStyles = makeStyles((theme) => ({
     right: '7%',
     color: 'white',
     textAlign: 'right',
-    maxWidth: "85%",
-    fontSize: "18pt",
+    maxWidth: "75%",
+    fontSize: "16pt",
     fontFamily: 'IBM Plex Sans Thai',  
   }
 }));
 
-export default function EventCard() {
+export default function EventCard(props) {
   const classes = useStyles();
   
   return (
@@ -38,7 +39,7 @@ export default function EventCard() {
         image="https://dummyimage.com/340x180"
         title="Live from space album cover"
       />
-      <div className={classes.overlay} >วันเฉลิมพระชนมพรรษา พระบาทสมเด็จพระวชิรเกล้า เจ้าอยู่หัว</div>
+      <div className={classes.overlay} >{props.title}</div>
     </Card>
   );
 }

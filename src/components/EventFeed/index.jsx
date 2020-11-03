@@ -46,7 +46,7 @@ const EventFeed = () => {
                         <Link to={{
                           pathname: data.path,}}
                           key={data.name}>
-                            <EventCard/>
+                            <EventCard title={data.name} />
                         </Link>
                     ))
                 } 

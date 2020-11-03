@@ -82,7 +82,7 @@ export default function WeekCard(props) {
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography className={classes.tag}>
-            #News
+            {'#'.concat(props.tag)}
           </Typography>
           <Typography className={classes.heading} component="h5" variant="h5">
             {props.title}
