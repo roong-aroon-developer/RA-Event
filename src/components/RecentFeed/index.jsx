@@ -3,10 +3,10 @@ import Carousel from 'react-multi-carousel'
 import { Link } from 'react-router-dom'
 
 import "react-multi-carousel/lib/styles.css"
-import './EventFeed.css'
+import './RecentFeed.css'
 
 import { EventData } from '../../store/EventFeedMock'
-import EventCard from './EventCard'
+import RecentCard from './RecentCard'
 
 const responsive = {
     largeDesktop: {
@@ -26,7 +26,7 @@ const responsive = {
     },
   }
 
-const EventFeed = () => {
+const RecentFeed = () => {
     return(
         <div>
             <div className='FeedText'>
@@ -46,7 +46,7 @@ const EventFeed = () => {
                         <Link to={{
                           pathname: data.path,}}
                           key={data.name}>
-                            <EventCard title={data.name} />
+                            <RecentCard title={data.name} />
                         </Link>
                     ))
                 } 
@@ -57,4 +57,4 @@ const EventFeed = () => {
     );
 }
 
-export default EventFeed;
+export default RecentFeed;

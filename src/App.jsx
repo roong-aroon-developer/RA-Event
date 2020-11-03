@@ -5,7 +5,7 @@ import { weekData } from "./store/weekFeedMock";
 import Navbar from "./components/Navbar"
 import Profile from "./pages/Profile";
 import Home from "./pages/Home";
-import Info from "./pages/Info";
+import EventPage from "./components/EventPage"
 
 const App = () => {
   return (
@@ -14,11 +14,11 @@ const App = () => {
         <Route path="/login" component={Profile} />
         <Route exact path="/" component={Home} />
         {EventData.map((data) => (
-          <Route key={data.name} path={data.path} component={Info} />
+          <Route key={data.name} path={data.path} component={()=> <EventPage title={data.name}/>} />
         ))}
-        {weekData.map((data) => (
+        {/*weekData.map((data) => (
           <Route key={data.name} path={data.path} component={Info} />
-        ))}
+        ))*/}
       </Switch>
       <Navbar id="navbar"/>
     </BrowserRouter>

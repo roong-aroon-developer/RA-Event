@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import EventFeed from "../components/EventFeed";
+import RecentFeed from "../components/RecentFeed";
 import Header from "../components/Header";
 import WeekFeed from "../components/WeekFeed";
 
@@ -10,7 +10,7 @@ const Home = () => {
     <Fragment>
       <div id="App">
         <Header />
-        <EventFeed />
+        <RecentFeed />
         <WeekFeed />
       </div>
     </Fragment>

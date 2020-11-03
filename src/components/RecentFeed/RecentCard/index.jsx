@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function EventCard(props) {
+export default function RecentCard(props) {
   const classes = useStyles();
   
   return (
