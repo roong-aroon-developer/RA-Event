@@ -20,17 +20,27 @@
     right: 0%;
     top: 0%;
     overflow: hidden;
+    
 }
 #InfoCircle{
     position: absolute;
     right: -12%;
     top:-26.5%;
     overflow: hidden;
+    padding-top: 18px;
+    padding-right: 14px;
 
     width: 177px;
     height: 177px;
     border-radius: 500px;
     background-color: #284572;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+
 }
 #Line{
     margin-top: 16px;
@@ -38,4 +48,28 @@
     background-color: #D9D9D9;
     width: 204px;
     height: 1.5px;
+}
+#aqi{
+    width: 53px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+}
+#weather{
+   width: 32px;
+   flex-grow: 0;
+    flex-shrink: 0;
+   flex-basis: 50%;
+}
+#aqi-number{
+    color: white;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+}
+#temperature{
+    color: white;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
 }
