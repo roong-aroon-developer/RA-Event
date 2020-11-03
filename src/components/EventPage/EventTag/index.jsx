@@ -4,7 +4,7 @@ import './EventTag.css'
 const EventTag = (props) => {
     return(
         <div className='TagBubble'>
-            {"#".concat(props.tags)}
+            {"#".concat(props.tag)}
         </div>
     );
 }

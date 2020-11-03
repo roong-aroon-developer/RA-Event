@@ -7,7 +7,7 @@ const EventPage = (props) => {
     return(
         <Fragment>
             <EventImage src={props.src} alt={props.alt}/>
-            <EventTag tags={props.tags}/>
+            <EventTag tag={props.tag}/>
             <EventContent title={props.title} body={props.body}/>
         </Fragment>
     )
