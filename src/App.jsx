@@ -14,7 +14,7 @@ const App = () => {
         <Route path="/login" component={Profile} />
         <Route exact path="/" component={Home} />
         {recentData.map((data) => (
-          <Route key={data.name} path={data.path} component={()=> <EventPage title={data.name} tags={data.tags} body={data.body}/>} />
+          <Route key={data.name} path={data.path} component={()=> <EventPage title={data.name} tags={data.tags} body={data.body} src={data.img} alt={data.imgAlt}>} />
         ))}
         {/*weekData.map((data) => (
           <Route key={data.name} path={data.path} component={Info} />

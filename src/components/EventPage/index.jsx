@@ -6,7 +6,7 @@ import EventContent from './EventContent'
 const EventPage = (props) => {
     return(
         <Fragment>
-            <EventImage src={props.src}/>
+            <EventImage src={props.src} alt={props.alt}/>
             <EventTag tags={props.tags}/>
             <EventContent title={props.title} body={props.body}/>
         </Fragment>
