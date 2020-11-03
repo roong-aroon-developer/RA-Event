@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import "react-multi-carousel/lib/styles.css"
 import './RecentFeed.css'
 
-import { EventData } from '../../store/EventFeedMock'
+import { recentData } from '../../store/recentFeedMock'
 import RecentCard from './RecentCard'
 
 const responsive = {
@@ -42,7 +42,7 @@ const RecentFeed = () => {
                 itemClass="Item"
               >
                 {
-                    EventData.map(data => (
+                    recentData.map(data => (
                         <Link to={{
                           pathname: data.path,}}
                           key={data.name}>

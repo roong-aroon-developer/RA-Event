@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
-import { EventData } from "./store/EventFeedMock";
+import { recentData } from "./store/recentFeedMock";
 import { weekData } from "./store/weekFeedMock";
 import Navbar from "./components/Navbar"
 import Profile from "./pages/Profile";
