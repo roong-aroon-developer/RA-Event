@@ -10,6 +10,8 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@import url('https://cdn.lazywasabi.net/fonts/IBMPlexSansThai/IBMPlexSansThai.css');
+
 #root {
   width: 100%;
   height: 100%;
