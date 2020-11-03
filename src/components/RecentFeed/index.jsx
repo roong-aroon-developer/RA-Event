@@ -46,7 +46,7 @@ const RecentFeed = () => {
                         <Link to={{
                           pathname: data.path,}}
                           key={data.name}>
-                            <RecentCard title={data.name} />
+                            <RecentCard title={data.name} src={data.img} alt={data.imgAlt}/>
                         </Link>
                     ))
                 } 

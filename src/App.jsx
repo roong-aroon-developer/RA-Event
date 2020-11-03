@@ -13,7 +13,7 @@ const App = () => {
       <Switch>
         <Route path="/login" component={Profile} />
         <Route exact path="/" component={Home} />
-        {EventData.map((data) => (
+        {recentData.map((data) => (
           <Route key={data.name} path={data.path} component={()=> <EventPage title={data.name} tags={data.tags} body={data.body}/>} />
         ))}
         {/*weekData.map((data) => (

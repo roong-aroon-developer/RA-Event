@@ -33,7 +33,7 @@ export default function RecentCard(props) {
     <Card className={classes.root}>
       <img
         className={classes.cover}
-        src="https://dummyimage.com/340x180"
+        src={props.src}
         alt={props.alt}
         loading="lazy"
       />
