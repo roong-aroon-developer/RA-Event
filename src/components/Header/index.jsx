@@ -13,10 +13,14 @@ const Header = () => {
             <div id="Line" />
             <div id = "CircleBox">
                 <div id = "InfoCircle">
-                    <img src={ require('../../static/mask-01.png')} alt='mask' id='aqi'/>
-                    <img src={require('../../static/weather-icon.png')} alt='weather-cloud' id='weather'/>
-                    <div id='aqi-number'>xx aqi</div>
-                    <div id='temperature'>x°c</div>
+                    <div id='aqi-column'>
+                        <img src={ require('../../static/mask-01.png')} alt='mask' id='aqi'/>
+                        <div id='aqi-number'>xx aqi</div>
+                    </div>
+                    <div id='temperature-column'>
+                        <img src={require('../../static/weather-icon.png')} alt='weather-cloud' id='weather'/>
+                        <div id='temperature'>x°c</div>
+                    </div>
                 </div>
             </div>
         </div>
