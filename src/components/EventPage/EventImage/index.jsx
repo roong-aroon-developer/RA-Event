@@ -9,8 +9,8 @@ const useStyles = makeStyles({
         width: 100,
     },
     backCircle: {
-        position: 'relative',
-        top: 11,
+        position: 'absolute',
+        top: 50,
         left: '4%',
         width: 32,
         height: 32,
@@ -32,13 +32,13 @@ const EventImage = (props) => {
     const classes = useStyles();
     return(
         <div className="TemplatePage" >
-            <div className = 'placeholder' >
-                <Link to='/'>
+            <Link to='/'>
                     <div className={classes.backCircle}>
                         <ArrowBackIosRoundedIcon className = {classes.backArrow} />
                     </div>
                 </Link>
-            </div>
+            <img className = 'placeholder' alt="cover" src="https://dummyimage.com/375x250"/>
+                
         </div>
     )
 }
