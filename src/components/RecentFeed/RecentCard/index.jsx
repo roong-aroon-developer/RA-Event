@@ -7,12 +7,14 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     marginTop: 20,
     marginBottom: 20,
+    width: '100%',
     height: 180,
     borderRadius: 10,
   },
   cover: {
     width: "100%",
     filter: "brightness(55%)",
+    objectFit: 'cover'
   },
   overlay: {
     position: "absolute",
