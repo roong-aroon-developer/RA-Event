@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     width: "95%",
     height: 60,
     position: "fixed",
-    bottom: 12,
+    bottom: 16,
     left: "2.5%",
     backgroundColor: "#ffffff",
     borderRadius: 30,
