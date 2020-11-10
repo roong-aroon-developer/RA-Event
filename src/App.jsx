@@ -1,16 +1,15 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 import { recentData } from "./store/recentFeedMock";
 import { weekData } from "./store/weekFeedMock";
 import Navbar from "./components/Navbar";
 import Profile from "./pages/Profile";
-const  Home = lazy(() => import("./pages/Home"));
-const EventPage = lazy(() => import("./components/EventPage"));
+import Home from "./pages/Home";
+import EventPage from "./components/EventPage";
 
 const App = () => {
   return (
     <BrowserRouter>
-    <Suspense fallback={<div>Loading...</div>}>
       <Switch>
         <Route path="/login" component={Profile} />
         <Route exact path="/" component={Home} />
@@ -46,9 +45,7 @@ const App = () => {
           />
         ))}
       </Switch>
-      </Suspense>
       <Navbar id="navbar" />
-      
     </BrowserRouter>
   );
 };
