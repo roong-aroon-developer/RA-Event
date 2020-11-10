@@ -8,11 +8,17 @@ html, body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
   /*PWA Behavior*/
   overscroll-behavior: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
+  -webkit-overflow-scrolling: auto;
+}
+
+*::-webkit-scrollbar {
+  display: none
 }
 
 @import url('https://cdn.lazywasabi.net/fonts/IBMPlexSansThai/IBMPlexSansThai.css');

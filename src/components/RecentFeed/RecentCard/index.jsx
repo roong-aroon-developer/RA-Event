@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 20,
     marginBottom: 20,
     width: '100%',
-    height: 180,
+    height: '24vh',
     borderRadius: 10,
   },
   cover: {

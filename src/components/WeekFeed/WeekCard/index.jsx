@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     marginTop: 20,
-    height: 130,
+    height: '17vh',
     borderRadius: 10,
   },
   tag: {
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 0,
   },
   cover: {
-    minWidth: 120,
+    minWidth: "35%",
   },
   controls: {
     display: "flex",
