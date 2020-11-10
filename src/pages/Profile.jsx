@@ -4,7 +4,7 @@ import ProfilePage from "../components/ProfilePage"
 
 const Profile = () => {
   return (
-    <Login/>
+    <ProfilePage/>
   )
 }
 

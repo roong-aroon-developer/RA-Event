@@ -11,7 +11,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/login" component={Profile} />
+        <Route path="/profile" component={Profile} />
         <Route exact path="/" component={Home} />
         {recentData.map((data) => (
           <Route
