@@ -13,6 +13,7 @@ const App = () => {
       <Switch>
         <Route path="/login" component={Profile} />
         <Route exact path="/" component={Home} />
+        <Route path="/Profile" component={Profile} />
         {recentData.map((data) => (
           <Route key={data.name} path={data.path} component={()=> <EventPage title={data.name} tag={data.tag} body={data.body} src={data.img} alt={data.imgAlt}/>} />
         ))}

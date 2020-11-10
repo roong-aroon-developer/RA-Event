@@ -1,10 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Login from "../components/Login"
 import ProfilePage from "../components/ProfilePage"
 
 const Profile = () => {
   return (
-    <Login/>
+    <Fragment>
+      {/*<Login />*/}
+      <ProfilePage />
+    </Fragment>
   )
 }
 
