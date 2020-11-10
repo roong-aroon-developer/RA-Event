@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, Suspense, lazy } from 'react'
 import { Link } from 'react-router-dom'
 import { weekData } from '../../store/weekFeedMock.js'
-import WeekCard  from './WeekCard/index'
-
 import './WeekFeed.css'
+
+const WeekCard = lazy(() => import('./WeekCard'))
     
 const WeekFeed = () => {
     return(
@@ -16,7 +16,9 @@ const WeekFeed = () => {
             <Link style={{textDecoration: "none"}} to={{
               pathname: data.path,}}
               key={data.name}>
-                <WeekCard title={data.name} date={data.date} tag={data.tag} alt={data.imgAlt}/>
+                <Suspense fallback={<div>Loading</div>}>
+                  <WeekCard title={data.name} date={data.date} tag={data.tag} alt={data.imgAlt}/>
+                </Suspense>
             </Link>
             ))
         }

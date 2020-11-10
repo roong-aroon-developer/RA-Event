@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { lazy, Suspense} from 'react'
 import Carousel from 'react-multi-carousel'
 import { Link } from 'react-router-dom'
 
@@ -6,7 +6,7 @@ import "react-multi-carousel/lib/styles.css"
 import './RecentFeed.css'
 
 import { recentData } from '../../store/recentFeedMock'
-import RecentCard from './RecentCard'
+const RecentCard = lazy(() => import('./RecentCard'))
 
 const responsive = {
     largeDesktop: {
@@ -46,7 +46,9 @@ const RecentFeed = () => {
                         <Link to={{
                           pathname: data.path,}}
                           key={data.name}>
-                            <RecentCard title={data.name} src={data.img} alt={data.imgAlt}/>
+                            <Suspense fallback={<div>Loading...</div>}>
+                              <RecentCard title={data.name} src={data.img} alt={data.imgAlt}/>
+                            </Suspense>
                         </Link>
                     ))
                 } 
