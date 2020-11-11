@@ -42,8 +42,8 @@ const ProfilePage = (props) => {
         />
 
         <div id="btn-wrapper">
-          <button id="cancel-btn">Cancel</button>
-          <button id="save-btn">Save</button>
+          <button className="cancel-btn">Cancel</button>
+          <button className="save-btn">Save</button>
         </div>
         </div>
       </div>

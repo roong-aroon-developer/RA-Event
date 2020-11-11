@@ -20,7 +20,7 @@
     margin-right: 2%;
 }
 
-#cancel-btn{
+.cancel-btn{
     border: none;
     outline: none;
 
@@ -32,7 +32,11 @@
     
 }
 
-#save-btn{
+.cancel-btn:active{
+    color: lightblue;
+}
+
+.save-btn{
     border: none;
     outline: none;
 
@@ -47,6 +51,12 @@
     padding-left: 5%;
     padding-right: 5%;
 }
+
+.save-btn:active{
+    background-color: #072F5F;
+    transform: translateY(1.5px);
+}
+
 #field-container {
     margin-right: 15%;
     margin-left: 15%;
