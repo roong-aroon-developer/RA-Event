@@ -3,7 +3,9 @@ import './Loader.css'
 
 const Loader = () => {
     return(
-        <div id="loader"></div>
+        <div id="loader-container">
+            <div id="loader" />
+        </div>
     );
 }
 
