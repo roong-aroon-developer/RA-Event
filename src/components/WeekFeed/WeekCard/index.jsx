@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     display: "inline-block",
     borderRadius: 100,
     backgroundColor: "#EBEBEB",
-
+    marginRight: 10,
     color: "#667EEA",
     fontSize: 12,
     paddingLeft: 4,
@@ -81,9 +81,13 @@ export default function WeekCard(props) {
       />
       <div className={classes.details}>
         <CardContent className={classes.content}>
-          <Typography className={classes.tag}>
-            {"#".concat(props.tag)}
-          </Typography>
+          { props.tag.map(data=> {
+            return(
+              <Typography className={classes.tag}>
+                {"#".concat(data)}
+              </Typography>
+            )
+          }) }
           <Typography className={classes.heading} component="h5" variant="h5">
             {props.title}
           </Typography>

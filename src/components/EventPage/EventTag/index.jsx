@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import './EventTag.css'
 
 const EventTag = (props) => {
     return(
-        <div className='TagBubble'>
-            {"#".concat(props.tag)}
-        </div>
+        <Fragment>
+            {props.tag.map(data=> {
+                return (
+                    <div className='TagBubble'>
+                    {"#".concat(data)}
+                    </div>
+                )
+            })}
+        </Fragment>
     );
 }
 
