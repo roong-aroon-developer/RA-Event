@@ -9,3 +9,4 @@
 - [ ] add to home screen guildline (ios)
 - [ ] add to home screen guildline (android)
 - [x] iOS Status bar PWA problem
+- [ ] implement skeleton loader
