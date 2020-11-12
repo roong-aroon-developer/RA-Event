@@ -1,5 +1,5 @@
 ## TODO List
-- [ ] Add Loader
+- [x] Add Loader
 - [ ] Lazyload component
 - [ ] Connect to database
 - [ ] Profile Page
