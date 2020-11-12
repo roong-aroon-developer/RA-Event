@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Avatar from "@material-ui/core/Avatar";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from 'react-router-dom'
 import "./ProfilePage.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -46,7 +47,9 @@ const ProfilePage = (props) => {
           />
 
           <div id="btn-wrapper">
+            <Link to="/">
             <button className="cancel-btn">Cancel</button>
+            </Link>
             <button className="save-btn">Save</button>
           </div>
           </div>
