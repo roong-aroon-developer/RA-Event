@@ -11,7 +11,7 @@ export const recentData = [
   {
     name: "วันเฉลิมพระชนมพรรษาพระบาทสมเด็จพระวชิรเกล้าเจ้าอยู่หัว",
     path: "/test2",
-    tag: "news",
+    tag: ["news", "anounce"],
     date: "21 Sept 2020",
     img: "https://dummyimage.com/340x180",
     imgAlt: "ในหลวง",
@@ -20,7 +20,7 @@ export const recentData = [
   {
     name: "วันเฉลิมพระชนมพรรษาพระบาทสมเด็จพระวชิรเกล้าเจ้าอยู่หัว",
     path: "/test3",
-    tag: "news",
+    tag: ["news", "anounce"],
     date: "21 Sept 2020",
     img: "https://dummyimage.com/340x180",
     imgAlt: "ในหลวง",
@@ -29,7 +29,7 @@ export const recentData = [
   {
     name: "วันเฉลิมพระชนมพรรษาพระบาทสมเด็จพระวชิรเกล้าเจ้าอยู่หัว",
     path: "/test4",
-    tag: "news",
+    tag: ["news", "anounce"],
     date: "21 Sept 2020",
     img: "https://dummyimage.com/340x180",
     imgAlt: "ในหลวง",
