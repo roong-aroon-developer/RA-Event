@@ -2,8 +2,6 @@ import React, { lazy, Suspense} from 'react'
 import Carousel from 'react-multi-carousel'
 import { Link } from 'react-router-dom'
 import Loader from '../Loader'
-import Skeleton from '@material-ui/lab/Skeleton';
-import { makeStyles } from '@material-ui/core/styles'
 
 import "react-multi-carousel/lib/styles.css"
 import './RecentFeed.css'
