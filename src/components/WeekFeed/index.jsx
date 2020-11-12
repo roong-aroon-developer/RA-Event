@@ -13,8 +13,8 @@ const WeekFeed = () => {
         </div>  
         {
             weekData.map(data => (
-            <Link style={{textDecoration: "none"}} to={{
-              pathname: data.path,}}
+            <Link style={{textDecoration: "none"}} 
+              to={{pathname: data.path,}}
               key={data.name}>
                 <Suspense fallback={<div>Loading</div>}>
                   <WeekCard title={data.name} date={data.date} tag={data.tag} alt={data.imgAlt}/>

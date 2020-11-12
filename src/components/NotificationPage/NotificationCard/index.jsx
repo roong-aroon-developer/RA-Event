@@ -5,9 +5,11 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     root: {
         display: "flex",
-        marginTop: 20,
-        height: '12vh',
+        marginTop: 10,
+        height: '10vh',
         borderRadius: 20,
+
+        boxShadow: '2px 2px 5px lightgray',
     },
 }))
 
