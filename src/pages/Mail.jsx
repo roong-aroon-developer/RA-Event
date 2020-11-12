@@ -1,14 +1,13 @@
 import React, { Fragment } from 'react';
-import Skeleton from '@material-ui/lab/Skeleton'
-import RecentCard from '../components/RecentFeed/RecentCard'
-import Loader from '../components/Loader'
+import NotificationPage from '../components/NotificationPage';
+import '../styles/Mail.css'
 
 const Mail = () => {
     return(
         <Fragment>
-            <Skeleton>
-                <RecentCard />
-            </Skeleton>
+            <div id='mail-container'>
+                <NotificationPage />
+            </div>
         </Fragment>
     )
 }
