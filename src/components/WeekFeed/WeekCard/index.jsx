@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 20,
     height: '17vh',
     borderRadius: 10,
+    boxShadow: '2px 2px 6px #a6a6af'
   },
   tag: {
     display: "inline-block",
