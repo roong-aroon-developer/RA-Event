@@ -5,8 +5,8 @@ import ProfilePage from "../components/ProfilePage"
 const Profile = () => {
   return (
     <Fragment>
-      {/*<Login />*/}
-      <ProfilePage />
+      <Login />
+      {/* <ProfilePage /> */}
     </Fragment>
   )
 }
