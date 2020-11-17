@@ -2,6 +2,7 @@ import React, { lazy, Suspense} from 'react'
 import Carousel from 'react-multi-carousel'
 import { Link } from 'react-router-dom'
 import Loader from '../Loader'
+import RecentCardSkeleton from './RecentCardSkeleton'
 
 import "react-multi-carousel/lib/styles.css"
 import './RecentFeed.css'
@@ -47,7 +48,7 @@ const RecentFeed = () => {
                         <Link to={{
                           pathname: data.path,}}
                           key={data.name}>
-                            <Suspense fallback={<Loader/>}>
+                            <Suspense fallback={<RecentCardSkeleton/>}>
                               <RecentCard title={data.name} src={data.img} alt={data.imgAlt}/>
                             </Suspense>
                         </Link>
