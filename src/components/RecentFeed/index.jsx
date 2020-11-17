@@ -1,7 +1,6 @@
 import React, { lazy, Suspense} from 'react'
 import Carousel from 'react-multi-carousel'
 import { Link } from 'react-router-dom'
-import Loader from '../Loader'
 import RecentCardSkeleton from './RecentCardSkeleton'
 
 import "react-multi-carousel/lib/styles.css"
