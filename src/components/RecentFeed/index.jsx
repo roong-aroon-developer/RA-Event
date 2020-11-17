@@ -48,7 +48,7 @@ const RecentFeed = () => {
                         <Link to={{
                           pathname: data.path,}}
                           key={data._id}>
-                            <Suspense fallback={<Loader/>}>
+                            <Suspense fallback={<RecentCardSkeleton/>}>
                               <RecentCard title={data.name} src={data.img} alt={data.imgAlt}/>
                             </Suspense>
                         </Link>
