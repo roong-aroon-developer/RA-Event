@@ -15,7 +15,7 @@ const NotificationPage = () => {
                 NotificationData.map(data => (
                     <Link style={{textDecoration:'none'}} 
                     to={{pathname: data.path,}}
-                    key={data.name}>
+                    key={data._id}>
                         <NotificationCard />
                     </Link>
                 ))

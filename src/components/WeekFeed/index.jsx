@@ -16,7 +16,7 @@ const WeekFeed = () => {
             weekData.map(data => (
             <Link style={{textDecoration: "none"}} 
               to={{pathname: data.path,}}
-              key={data.name}>
+              key={data._id}>
                 <Suspense fallback={<WeekCardSkeleton />}>
                   <WeekCard title={data.name} date={data.date} tag={data.tag} alt={data.imgAlt}/>
                 </Suspense>
