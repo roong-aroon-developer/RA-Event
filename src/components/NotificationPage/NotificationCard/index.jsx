@@ -7,8 +7,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         marginTop: 10,
         height: '10vh',
-        borderRadius: 20,
-
+        borderRadius: 15,
         boxShadow: '2px 2px 5px lightgray',
     },
 }))
@@ -18,7 +17,6 @@ const NotificationCard = () => {
     return(
         <Fragment>
             <Card className={classes.root}>
-                
             </Card>
         </Fragment>
     )
