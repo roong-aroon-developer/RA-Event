@@ -2,7 +2,7 @@
 - [x] Add Loader
 - [ ] Lazyload component
 - [ ] Connect to database
-- [ ] Profile Page
+- [x] Profile Page
 - [ ] Add RA logo to Login Page
 - [ ] PWA Performance Optimizations
 - [ ] Responsiveness
