@@ -3,10 +3,14 @@ import { Link } from 'react-router-dom';
 import { NotificationData } from '../../store/NotificationMock.js';
 
 import NotificationCard from './NotificationCard';
+import './NotificationPage.css'
 
 const NotificationPage = () => {
     return(
         <Fragment>
+            <div id='notification-header'>
+                Notifications
+            </div>
             {
                 NotificationData.map(data => (
                     <Link style={{textDecoration:'none'}} 

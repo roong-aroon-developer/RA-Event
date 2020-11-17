@@ -18,7 +18,7 @@ const NotificationCard = () => {
     return(
         <Fragment>
             <Card className={classes.root}>
-
+                
             </Card>
         </Fragment>
     )
