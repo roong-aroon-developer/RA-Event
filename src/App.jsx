@@ -3,12 +3,11 @@ import { Route, BrowserRouter, Switch } from "react-router-dom";
 import { recentData } from "./store/recentFeedMock";
 import { weekData } from "./store/weekFeedMock";
 import Navbar from "./components/Navbar";
-import Profile from "./pages/Profile";
-import Mail from "./pages/Mail";
 import Loader from "./components/Loader";
+import Home from "./pages/Home";
 const EventPage = React.lazy(() => import("./components/EventPage"));
-
-const Home = React.lazy(()=> import("./pages/Home"));
+const Profile = React.lazy(() => import("./pages/Profile"));
+const Mail = React.lazy(() => import("./pages/Mail"));
 
 const App = () => {
   return (
