@@ -21,7 +21,7 @@ const App = () => {
         <Route path="/Mail" component={Mail} />
         {recentData.map((data) => (
           <Route
-            key={data.name}
+            key={data._id}
             path={data.path}
             component={() => (
               <EventPage
@@ -36,7 +36,7 @@ const App = () => {
         ))}
         {weekData.map((data) => (
           <Route
-            key={data.name}
+            key={data._id}
             path={data.path}
             component={() => (
               <EventPage

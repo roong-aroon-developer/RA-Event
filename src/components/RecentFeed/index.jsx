@@ -47,8 +47,8 @@ const RecentFeed = () => {
                     recentData.map(data => (
                         <Link to={{
                           pathname: data.path,}}
-                          key={data.name}>
-                            <Suspense fallback={<RecentCardSkeleton/>}>
+                          key={data._id}>
+                            <Suspense fallback={<Loader/>}>
                               <RecentCard title={data.name} src={data.img} alt={data.imgAlt}/>
                             </Suspense>
                         </Link>

@@ -84,7 +84,7 @@ export default function WeekCard(props) {
         <CardContent className={classes.content}>
           { props.tag.map(data=> {
             return(
-              <Typography className={classes.tag}>
+              <Typography className={classes.tag} key={data}>
                 {"#".concat(data)}
               </Typography>
             )
