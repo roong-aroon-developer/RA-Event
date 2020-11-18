@@ -15,7 +15,7 @@ const LoginField = (props) => {
       </div>
       <div id='logo-wrapper'>
         <img src={Logo} alt='logo' id='logo'/>
-      </div>
+      </div> 
     </Fragment>
   );
 };

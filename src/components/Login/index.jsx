@@ -4,6 +4,7 @@ import LoginField from "./LoginField";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import "firebase/auth";
 import firebase from "../../store/Firebase";
+import './LoginPage.css'
 
 const uiConfig = {
   // Popup signin flow rather than redirect flow.
@@ -19,12 +20,14 @@ const uiConfig = {
 const Login = () => {
 
   return (
-    <LoginField>
-      <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
-      <Link to='/' style={{color:'#AAAAAA'}}>
-        Login as guest
-      </Link>
-    </LoginField>
+    <div id="login-page">
+      <LoginField>
+        <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+        <Link to='/' style={{color:'#AAAAAA'}}>
+          Login as guest
+        </Link>
+      </LoginField>
+    </div>
   );
 };
 
