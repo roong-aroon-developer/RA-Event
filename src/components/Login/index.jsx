@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import LoginField from "./LoginField";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import "firebase/auth";
@@ -15,12 +16,14 @@ const uiConfig = {
   ],
   signInSuccessUrl: "http://localhost:3000/"
 };
-
 const Login = () => {
 
   return (
     <LoginField>
       <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+      <Link to='/' style={{color:'#AAAAAA'}}>
+        Login as guest
+      </Link>
     </LoginField>
   );
 };
