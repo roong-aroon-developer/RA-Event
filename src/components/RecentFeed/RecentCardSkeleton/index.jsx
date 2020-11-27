@@ -7,34 +7,29 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         marginTop: 20,
         height: '24vh',
+        width: '100%',
         borderRadius: 10,
         backgroundColor: '#999999',
         overflow:'hidden',
         boxShadow: '2px 2px 6px #a6a6af',
     },
-    cover: {
-        minWidth: "100%",
-        height: "100%",
-    },
     textbox: {
-        width: 140,
+        width: "55%",
         height: 18,
         borderRadius: 10,
     },
     textBody: {
-        width: 100,
+        width: "40%",
         height: 18,
         borderRadius: 10,
     },
     details: {
+        width: "100%",
         display: "flex",
         flexDirection: "column",
         justifyContent: 'center',
-        alignItems: 'flex-start',
-        paddingTop: 12,
-        paddingBottom: 12,
-        paddingLeft: 8,
-        paddingRight: 6,
+        alignItems: 'flex-end',
+        paddingRight: 20,
     },
 }))
 const RecentCardSkeleton = () => {
@@ -42,7 +37,7 @@ const RecentCardSkeleton = () => {
     return(
         <Fragment>
             <div className={classes.root}>
-                <Skeleton variant="rect" width="100%" height="100%" />
+                
                 <div  className={classes.details}>
                     <Skeleton className={classes.textbox} />
                     <Skeleton className={classes.textBody} />
