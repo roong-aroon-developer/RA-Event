@@ -8,7 +8,7 @@ import './LoginPage.css'
 
 const uiConfig = {
   // Popup signin flow rather than redirect flow.
-  signInFlow: "popup",
+  signInFlow: "redirect",
   signInOptions: [
     {
       provider: firebase.auth.GoogleAuthProvider.PROVIDER_ID,

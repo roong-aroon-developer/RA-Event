@@ -27,6 +27,7 @@
 
     font-size: 14px;
     color: #646464;
+    z-index: 99;
 }
 #logintext{
     text-align: center;
@@ -54,6 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 }
 
 #logo{
