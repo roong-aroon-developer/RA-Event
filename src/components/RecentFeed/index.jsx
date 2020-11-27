@@ -28,13 +28,13 @@ const responsive = {
 };
 
 const RecentFeed = () => {
-  const [Data, setData] = React.useState([])
+  const [Data, setData] = React.useState([]);
   React.useEffect(() => {
     fetch("http://edu.roong-aroon.ac.th:9000/events")
       .then((data) => data.json())
-      .then(e => {
-        setData(e.data)
-      })
+      .then((e) => {
+        setData(e.data);
+      });
   });
   return (
     <div>
@@ -47,18 +47,19 @@ const RecentFeed = () => {
         responsive={responsive}
         focusOnSelect={true}
         itemClass="Item"
+        className="container-card"
       >
         {Data.map((data) => (
-          <Link
-            to={{
-              pathname: data.path,
-            }}
-            key={data._id}
-          >
-            <Suspense fallback={<RecentCardSkeleton />}>
+          <Suspense fallback={<RecentCardSkeleton />}>
+            <Link
+              to={{
+                pathname: data.path,
+              }}
+              key={data._id}
+            >
               <RecentCard title={data.name} src={data.img} alt={data.imgAlt} />
-            </Suspense>
-          </Link>
+            </Link>
+          </Suspense>
         ))}
       </Carousel>
     </div>
