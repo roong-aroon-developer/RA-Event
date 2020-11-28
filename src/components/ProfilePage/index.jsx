@@ -3,6 +3,7 @@ import Avatar from "@material-ui/core/Avatar";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from 'react-router-dom'
+import { AuthContext } from '../../store/AuthContext'
 import "./ProfilePage.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -19,7 +20,17 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const ProfilePage = (props) => {
+  const { userInfo } = React.useContext(AuthContext)
   const classes = useStyles();
+  const [displayName, setDisplayName] = React.useState("");
+  
+  React.useEffect(()=> {
+    setDisplayName(userInfo.name.split(" ")[0].charAt(0).toUpperCase() + userInfo.name.split(" ")[0].toLowerCase().slice(1))
+  }, [userInfo.name]);
+
+  const handleChange = (e) => {
+    setDisplayName(e.target.value)
+  }
   return (
     <Fragment>
       <div className={classes.root}>
@@ -33,17 +44,19 @@ const ProfilePage = (props) => {
           <TextField
             className={classes.textField}
             label="Display name"
+            value={displayName}
             type="text"
+            onChange={handleChange}
             variant="outlined"
           />
-
           <TextField
             className={classes.textField}
             label="Class"
             type="text"
             variant="outlined"
-            helperText="For example, 5/1"
+            helperText="Please contact your teacher in order to change your class"
             id="Classroom"
+            disabled
           />
 
           <div id="btn-wrapper">
