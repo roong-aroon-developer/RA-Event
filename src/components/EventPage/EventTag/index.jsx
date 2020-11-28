@@ -6,7 +6,7 @@ const EventTag = (props) => {
         <Fragment>
             {props.tag.map(data=> {
                 return (
-                    <div className='TagBubble'>
+                    <div className='TagBubble' key={data}>
                     {"#".concat(data)}
                     </div>
                 )
