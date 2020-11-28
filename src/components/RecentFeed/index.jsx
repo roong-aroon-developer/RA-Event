@@ -6,7 +6,6 @@ import RecentCardSkeleton from "./RecentCardSkeleton";
 import "react-multi-carousel/lib/styles.css";
 import "./RecentFeed.css";
 
-import { recentData } from "../../store/recentFeedMock";
 const RecentCard = lazy(() => import("./RecentCard"));
 
 const responsive = {
