@@ -29,11 +29,13 @@ const responsive = {
 
 const RecentFeed = () => {
   const [Data, setData] = React.useState([]);
+  const [isLoading, setIsLoading] = React.useState(true);
   React.useEffect(() => {
     fetch("http://edu.roong-aroon.ac.th:9000/events")
       .then((data) => data.json())
       .then((e) => {
         setData(e.data);
+        setIsLoading(false);
       });
   });
   return (
@@ -49,18 +51,26 @@ const RecentFeed = () => {
         itemClass="Item"
         className="container-card"
       >
-        {Data.map((data) => (
-          <Suspense fallback={<RecentCardSkeleton />}>
-            <Link
-              to={{
-                pathname: data.path,
-              }}
-              key={data._id}
-            >
-              <RecentCard title={data.name} src={data.img} alt={data.imgAlt} />
-            </Link>
-          </Suspense>
-        ))}
+        {!isLoading ? (
+          Data.map((data) => (
+            <Suspense fallback={<RecentCardSkeleton />}>
+              <Link
+                to={{
+                  pathname: data.path,
+                }}
+                key={data._id}
+              >
+                <RecentCard
+                  title={data.name}
+                  src={data.img}
+                  alt={data.imgAlt}
+                />
+              </Link>
+            </Suspense>
+          ))
+        ) : (
+          <RecentCardSkeleton />
+        )}
       </Carousel>
     </div>
   );
