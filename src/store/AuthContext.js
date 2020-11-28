@@ -6,7 +6,6 @@ export const AuthContext = React.createContext();
 
 export const AuthStore = (props) => {
   const [loggedIn, setLoggedIn] = useState(false);
-  const [display, setDisplay] = useState("");
   const [userInfo, setUserInfo] = useState({
     name: "",
     uid: "",
@@ -31,16 +30,11 @@ export const AuthStore = (props) => {
     }
   }, []);
 
-  const checkDisplayName = (e) => {
-    setDisplay(e)
-  }
   return (
       <AuthContext.Provider
         value={{
             loggedIn,
             userInfo,
-            display,
-            checkDisplayName
         }}>
           {props.children}
       </AuthContext.Provider>
