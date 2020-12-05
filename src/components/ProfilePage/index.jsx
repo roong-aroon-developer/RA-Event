@@ -24,6 +24,7 @@ const ProfilePage = (props) => {
   const { userInfo } = React.useContext(AuthContext);
   const classes = useStyles();
   const [displayName, setDisplayName] = React.useState("");
+  const [profile, setProfle] = React.useState("");
   const [classroom, setClassroom] = React.useState("");
 
   React.useEffect(() => {
@@ -31,6 +32,7 @@ const ProfilePage = (props) => {
       userInfo.name.split(" ")[0].charAt(0).toUpperCase() +
         userInfo.name.split(" ")[0].toLowerCase().slice(1)
     );
+    setProfle(userInfo.img)
     if(userInfo.email) {
       setClassroom(
         Data.find(
@@ -38,6 +40,7 @@ const ProfilePage = (props) => {
         ).st_room
       );
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userInfo.email, userInfo.name]);
 
   const handleChange = (e) => {
@@ -51,7 +54,7 @@ const ProfilePage = (props) => {
           <Avatar
             id="profile-img"
             alt="profile"
-            src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/studio77-mckinsey-6653-pai_2_1.jpg?bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&q=65&usm=15&vib=3&w=600&s=99b44ef23a4b1adc068f123672212bd1"
+            src={profile}
           />
           <div id="field-container">
             <TextField
