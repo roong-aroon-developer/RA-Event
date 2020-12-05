@@ -23,15 +23,21 @@ const useStyles = makeStyles((theme) => ({
 const ProfilePage = (props) => {
   const { userInfo } = React.useContext(AuthContext);
   const classes = useStyles();
-  const [displayName, setDisplayName] = React.useState("");
+  const [displayNameGoogle, setDisplayNameGoogle] = React.useState("");
+  const [temp, setTemp] = React.useState("");
   const [profile, setProfle] = React.useState("");
   const [classroom, setClassroom] = React.useState("");
 
   React.useEffect(() => {
-    setDisplayName(
+    setDisplayNameGoogle(
       userInfo.name.split(" ")[0].charAt(0).toUpperCase() +
         userInfo.name.split(" ")[0].toLowerCase().slice(1)
     );
+    setTemp(displayNameGoogle)
+    if (localStorage.getItem("dname") != null) {
+      setTemp(localStorage.getItem("dname")) 
+    }
+      
     setProfle(userInfo.img)
     if(userInfo.email) {
       setClassroom(
@@ -41,11 +47,16 @@ const ProfilePage = (props) => {
       );
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [userInfo.email, userInfo.name]);
+  }, [userInfo.email, userInfo.name,  ]);
 
   const handleChange = (e) => {
-    setDisplayName(e.target.value);
+    setTemp(e.target.value);
   };
+
+  const handleSave = () => {
+    localStorage.setItem("dname", temp)
+    //setDisplayName(localStorage.getItem("dname"))
+  }
 
   return (
     <Fragment>
@@ -60,7 +71,7 @@ const ProfilePage = (props) => {
             <TextField
               className={classes.textField}
               label="Display name"
-              value={displayName}
+              value={temp}
               type="text"
               onChange={handleChange}
               variant="outlined"
@@ -80,7 +91,7 @@ const ProfilePage = (props) => {
               <Link to="/">
                 <button className="cancel-btn">Cancel</button>
               </Link>
-              <button className="save-btn">Save</button>
+              <button className="save-btn" onClick={handleSave}>Save</button>
             </div>
           </div>
         </div>
