@@ -1,12 +1,15 @@
 ## TODO List
 - [x] Add Loader
-- [ ] Lazyload component
+- [x] Lazyload component
 - [ ] Connect to database
 - [x] Profile Page
-- [ ] Add RA logo to Login Page
+- [x] Add RA logo to Login Page
 - [ ] PWA Performance Optimizations
 - [ ] Responsiveness
 - [ ] add to home screen guildline (ios)
 - [ ] add to home screen guildline (android)
 - [x] iOS Status bar PWA problem
-- [ ] implement skeleton loader
+- [x] implement skeleton loader
+- [ ] Notification Page
+- [ ] Notification Bar
+- [ ] CMS
