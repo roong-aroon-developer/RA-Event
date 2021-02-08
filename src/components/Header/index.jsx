@@ -17,10 +17,12 @@ const Header = () => {
         setPm(parseInt(data.pm25));
         setCelcius(parseInt(data.temp));
       });
-    setDisplayName(userInfo.name.split(" ")[0].charAt(0).toUpperCase() +
-    userInfo.name.split(" ")[0].toLowerCase().slice(1))
+    if(userInfo.name) {
+      setDisplayName(userInfo.name.split(" ")[0].charAt(0).toUpperCase() + userInfo.name.split(" ")[0].toLowerCase().slice(1))
+    }
+    
 
-  }, [userInfo.name]);
+  }, []);
   return (
     <div id="GreetBox">
       <div id="Welcome">Morning, {localStorage.getItem("dname") != null ? localStorage.getItem("dname") : displayName}</div>

@@ -36,7 +36,7 @@ const RecentFeed = () => {
         setData(e.data);
         setIsLoading(false);
       });
-  });
+  }, []);
   return (
     <div>
       <div className="FeedText">Upcoming Event</div>
@@ -52,7 +52,7 @@ const RecentFeed = () => {
       >
         {!isLoading ? (
           Data.map((data) => (
-            <Suspense fallback={<RecentCardSkeleton />}>
+            <Suspense fallback={<RecentCardSkeleton />} key={data._id}>
               <Link
                 to={{
                   pathname: data.path,
