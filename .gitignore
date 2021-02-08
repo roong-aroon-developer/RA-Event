@@ -25,4 +25,3 @@ yarn-error.log*
 #custom
 debug.log
 package-lock.json
-src/config.js
