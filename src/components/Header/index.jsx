@@ -22,7 +22,7 @@ const Header = () => {
     }
     
 
-  }, []);
+  }, [userInfo.name]);
   return (
     <div id="GreetBox">
       <div id="Welcome">Morning, {localStorage.getItem("dname") != null ? localStorage.getItem("dname") : displayName}</div>
