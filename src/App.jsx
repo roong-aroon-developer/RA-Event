@@ -12,7 +12,7 @@ const Profile = React.lazy(() => import("./pages/Profile"));
 const Mail = React.lazy(() => import("./pages/Mail"));
 
 const App = () => {
-      if(isMobile){
+      if(true){ //set to isMobile on production
         return (
           <BrowserRouter>
           <Suspense fallback = {<Loader />}>
