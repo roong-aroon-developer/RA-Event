@@ -5,6 +5,7 @@ import { weekData } from "./store/weekFeedMock";
 import Navbar from "./components/Navbar";
 import Loader from "./components/Loader";
 import Home from "./pages/Home";
+import Unavailable from "./pages/Unavailable"
 import { isMobile } from "react-device-detect";
 const EventPage = React.lazy(() => import("./components/EventPage"));
 const Profile = React.lazy(() => import("./pages/Profile"));
@@ -58,7 +59,7 @@ const App = () => {
       }
       else {
         return(
-          <div> Please use this website on your mobile device</div>
+          <Unavailable/>
         )
       }
 };
