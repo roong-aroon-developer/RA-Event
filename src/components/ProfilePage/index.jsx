@@ -10,6 +10,8 @@ import "./ProfilePage.css";
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "absolute",
+    height: "100%",
+    width: "100%"
   },
   textField: {
     [`& fieldset`]: {
