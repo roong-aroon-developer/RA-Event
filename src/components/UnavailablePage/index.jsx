@@ -4,20 +4,21 @@ import TextContainer from "./TextContainer"
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        backgroundColor: "#F6F6F6",
+        height: "100%",
+        width: "100%",
     },
-    text: {
-        color: "#999999",
+    textstyles: {
+        color: "black",
         fontSize: 32,
-        textAlign: "center"
+        zIndex: 999,
     }
 }));
 
 export default function UnavailablePage(){
     const classes = useStyles();
     return(
-        <Fragment className ={classes.root}>
-            <TextContainer/>
+        <Fragment>
+             <TextContainer/>
         </Fragment>
     );
 }
