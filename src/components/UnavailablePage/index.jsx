@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
-import TextContainer from "./TextContainer"
+import bg from "../../static/bg.png"
 
 export default function UnavailablePage(){
     return(
         <Fragment>
-             <TextContainer/>
+             <img src={bg} alt="bg" style={{objectFit: "cover", width: "100%"}}></img>
         </Fragment>
     );
 }
