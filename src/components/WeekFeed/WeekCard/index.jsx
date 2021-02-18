@@ -38,7 +38,8 @@ const useStyles = makeStyles((theme) => ({
     padding: 0,
   },
   cover: {
-    minWidth: "35%",
+    width: "37%",
+    objectFit: "cover"
   },
   controls: {
     display: "flex",
