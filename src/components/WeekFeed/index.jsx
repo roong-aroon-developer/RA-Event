@@ -18,7 +18,7 @@ const WeekFeed = () => {
               to={{pathname: data.path,}}
               key={data._id}>
                 <Suspense fallback={<WeekCardSkeleton />}>
-                  <WeekCard title={data.name} date={data.date} tag={data.tag} alt={data.imgAlt}/>
+                  <WeekCard title={data.name} date={data.date} tag={data.tag} src={data.img} alt={data.imgAlt}/>
                 </Suspense>
             </Link>
             ))

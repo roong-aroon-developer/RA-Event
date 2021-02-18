@@ -5,8 +5,8 @@ export const weekData = [
         path: "/week",
         tag: ["news", "anounce"],
         date: "21 Sept 2020",
-        img: "",
-        imgAlt: "",
+        img: "https://res.cloudinary.com/raevent/image/upload/v1613615550/RA-Event/WashHand_davvfa.jpg",
+        imgAlt: "Washing hands",
         body: ""
     },
     {
@@ -15,8 +15,8 @@ export const weekData = [
         path: "/week2",
         tag: ["news", "anounce"],
         date: "21 Sept 2020",
-        img: "",
-        imgAlt: "",
+        img: " https://res.cloudinary.com/raevent/image/upload/v1613615549/RA-Event/Cleaning_n935ds.jpg",
+        imgAlt: "Chores register",
         body: ""
     },
     {
@@ -25,8 +25,8 @@ export const weekData = [
         path: "/week3",
         tag: ["news", "anounce"],
         date: "21 Sept 2020",
-        img: "",
-        imgAlt: "",
+        img: "https://res.cloudinary.com/raevent/image/upload/v1613615549/RA-Event/KmuttFormula_zs06uc.jpg",
+        imgAlt: "Kmutt formula tour",
         body: ""
     }
 ]

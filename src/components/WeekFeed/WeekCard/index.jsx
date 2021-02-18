@@ -76,7 +76,7 @@ export default function WeekCard(props) {
     <Card className={classes.root}>
       <img
         className={classes.cover}
-        src="https://dummyimage.com/120x130"
+        src={props.src}
         alt={props.alt}
         loading="lazy"
       />
