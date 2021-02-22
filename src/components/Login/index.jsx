@@ -15,7 +15,7 @@ const uiConfig = {
       customParameters: { hd: "roong-aroon.ac.th" },
     },
   ],
-  signInSuccessUrl: "http://localhost:3000/"
+  signInSuccessUrl: "https://ra-event.vercel.app"
 };
 const Login = () => {
 
