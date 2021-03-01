@@ -1,6 +1,15 @@
 .FeedText{
-    margin-bottom: 7px;
+    margin-bottom: 0.5vw;
     font-size: 15px;
     color:#484848;
     font-weight: 500;
+}
+@media only screen and (min-width: 768px){
+    .FeedText{
+        margin-top: 1.5vw;
+        margin-bottom: 0.5vw;
+        font-size: 3vw;
+        color:#484848;
+        font-weight: 500;
+    }
 }
