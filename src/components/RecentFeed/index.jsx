@@ -30,7 +30,7 @@ const RecentFeed = () => {
   const [Data, setData] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   React.useEffect(() => {
-    fetch("http://edu.roong-aroon.ac.th:9000/events")
+    fetch("http://localhost:9000/events")
       .then((data) => data.json())
       .then((e) => {
         setData(e.data);
