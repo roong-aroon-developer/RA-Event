@@ -9,9 +9,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     marginTop: 20,
-    height: '17vh',
+    height: "17vh",
     borderRadius: 10,
-    boxShadow: '2px 2px 6px #a6a6af'
+    boxShadow: "2px 2px 6px #a6a6af",
   },
   tag: {
     display: "inline-block",
@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cover: {
     width: "37%",
-    objectFit: "cover"
+    objectFit: "cover",
   },
   controls: {
     display: "flex",
@@ -83,13 +83,13 @@ export default function WeekCard(props) {
       />
       <div className={classes.details}>
         <CardContent className={classes.content}>
-          { props.tag.map(data=> {
-            return(
+          {props.tag.map((data) => {
+            return (
               <Typography className={classes.tag} key={data}>
                 {"#".concat(data)}
               </Typography>
-            )
-          }) }
+            );
+          })}
           <Typography className={classes.heading} component="h5" variant="h5">
             {props.title}
           </Typography>

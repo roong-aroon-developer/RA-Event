@@ -51,7 +51,7 @@ const RecentFeed = () => {
         className="container-card"
       >
         {!isLoading ? (
-          Data.map((data) => (
+          Data.filter(d => d.displayOn === "Upcoming").map((data) => (
             <Suspense fallback={<RecentCardSkeleton />} key={data._id}>
               <Link
                 to={{
