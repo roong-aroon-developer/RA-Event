@@ -37,7 +37,7 @@ const EventImage = (props) => {
                         <ArrowBackIosRoundedIcon className = {classes.backArrow} />
                     </div>
                 </Link>
-            <img className = 'placeholder' alt="cover" src="https://dummyimage.com/375x250"/>
+            <img className = 'placeholder' alt="cover" src={props.src}/>
                 
         </div>
     )
