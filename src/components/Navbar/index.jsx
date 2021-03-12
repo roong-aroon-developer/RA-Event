@@ -32,13 +32,14 @@ const Navbar = () => {
   const classes = useStyles();
   const [show, setShow] = React.useState(true);
   const [scrollPos, setScrollPos] = React.useState(true);
-  const handleScroll = () => {
-    setScrollPos(document.body.getBoundingClientRect().top);
-    setShow(document.body.getBoundingClientRect().top > scrollPos);
-  };
+  
   React.useEffect(() => {
+    const handleScroll = () => {
+      setScrollPos(document.body.getBoundingClientRect().top);
+      setShow(document.body.getBoundingClientRect().top > scrollPos);
+    };
     window.addEventListener("scroll", handleScroll);
-  });
+  }, [scrollPos]);
   return (
     <BottomNavigation className={classes.root} id={show ? "active" : "hidden"}>
       <BottomNavigationAction
