@@ -1,6 +1,9 @@
-#notification-header{
-    font-size: 32px;
-    color: #646464;
-    font-family: 'IBM Plex Sans Thai';
-    margin-left: 1vh;
+.text-coming-soon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-coming-soon {
+    text-align: center;
 }

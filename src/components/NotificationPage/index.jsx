@@ -1,26 +1,13 @@
-import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
-import { NotificationData } from '../../store/NotificationMock.js';
-
-import NotificationCard from './NotificationCard';
+import React from 'react';
 import './NotificationPage.css'
 
 const NotificationPage = () => {
     return(
-        <Fragment>
-            <div id='notification-header'>
-                Notifications
+        <div className="text-coming-soon">
+            <div className="child-coming-soon">
+            Coming Soon :P
             </div>
-            {
-                NotificationData.map(data => (
-                    <Link style={{textDecoration:'none'}} 
-                    to={{pathname: data.path,}}
-                    key={data._id}>
-                        <NotificationCard />
-                    </Link>
-                ))
-            }
-        </Fragment>
+        </div>
     )
 }
 
