@@ -39,8 +39,8 @@ Features:
    yarn build
    ```
     #### Must be work with
-    - [RA Event Admin](https://reactjs.org/)
-    - [RA Event Backend](https://reactjs.org/)
+    - [RA Event Admin](https://github.com/roong-aroon-developer/RA-Event-admin)
+    - [RA Event Backend](https://github.com/roong-aroon-developer/RA-Event-backend)
     
 
 ## Contributing
